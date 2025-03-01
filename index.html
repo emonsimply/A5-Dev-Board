@@ -53,14 +53,14 @@
   </header>
   <main class="flex gap-4">
     <section class="bg-white rounded-xl">
-      <div class="flex p-4 gap-4">
+      <div class="flex flex-col p-4 gap-4 justify-between lg:flex-row">
         <!-- Task Assigned -->
         <div class="flex items-center bg-primaryColor p-6 rounded-xl">
           <div class="flex items-center bg-white p-3 rounded-full gap-3 mr-3">
             <img src="assets/checkbox.png" alt="">
           </div>
           <div>
-            <p>Task Assigned </p>
+            <p>Task Assigned</p>
             <h2 class="font-bold text-2xl">06</h2>
           </div>
         </div>
@@ -75,30 +75,45 @@
             <img src="assets/calender.png" alt="">
           </div>
           <div>
-            <p>Wed ,
-              Jul 28 2025  </p>
+            <p>Wed, Jul 28 2025</p>
           </div>
         </div>
       </div>
 
       <hr class="border-t-2 border-dashed">
-      <!-- cards -->
-      <div></div>
+      <!-- cards div -->
+      <div class="flex flex-col lg:flex-row p-4 gap-4">
+        <!-- card 1 -->
+        <div class="bg-primaryColor p-6 rounded-xl space-y-4">
+          <button class="bg-white py-2 px-3 rounded-lg">ShopEase</button>
+          <h2 class="text-2xl">Fix Mobile Button Issue </h2>
+          <p class="bg-white py-2 px-3 rounded-lg opacity-50">Debug using Chrome DevTools, check for overlappin</p>
+          <hr class="border-t-2 border-dashed">
+          <div class="flex justify-between items-center">
+            <div>
+              <P class="opacity-70">Deadline</P>
+              <h2>21 March 2025</h2>
+            </div>
+            <button class="text-white bg-bgColor rounded-lg py-2 px-4 hover:bg-blue-700">Completed</button>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- History section -->
     <section class="bg-white rounded-xl">
       <div class="p-4 flex flex-col items-center">
-        <div class="flex gap-2 mb-3">
+        <div class="flex gap-2 mb-3 items-center">
           <img src="assets/activity.png" alt="">
-          <h1>Activity Log</h1>
+          <h1 class="text-xl">Activity Log</h1>
         </div>
-        <button class="text-white bg-bgColor rounded-lg p-2">Clear History</button>
+        <button class="text-white bg-bgColor rounded-lg py-2 px-4 hover:bg-blue-700">Clear History</button>
       </div>
 
       <hr class="border-t-2 border-dashed">
       <!--  message -->
-      <div class="bg-primaryColor m-4 p-2 rounded-lg max-w-72 opacity-70">
+      <div class="bg-primaryColor m-4 p-2 rounded-lg max-w-72 opacity-70 ">
         <p>You have Complete The Task <span>Add Dark Mode at 12:48:15 PM</span></p>
       </div>
     </section>
