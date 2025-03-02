@@ -14,7 +14,7 @@ document.getElementById("completedBtn").addEventListener('click', function () {
 
   const d = new Date();
   let currentTime = d.toLocaleTimeString();
-  
+
   const messageDiv = document.createElement("div");
   messageDiv.classList.add("bg-primaryColor", "m-4", "p-2", "rounded-lg", "max-w-72", "opacity-70");
   messageDiv.innerHTML = `<p>You have completed the task Fix Mobile Button Issue at ${currentTime}</p>`;
@@ -38,7 +38,7 @@ document.getElementById("completedBtn2").addEventListener('click', function () {
 
   const d = new Date();
   let currentTime = d.toLocaleTimeString();
-  
+
   const messageDiv = document.createElement("div");
   messageDiv.classList.add("bg-primaryColor", "m-4", "p-2", "rounded-lg", "max-w-72", "opacity-70");
   messageDiv.innerHTML = `<p>You have completed the task Add Dark Mode at ${currentTime}</p>`;
@@ -62,7 +62,7 @@ document.getElementById("completedBtn3").addEventListener('click', function () {
 
   const d = new Date();
   let currentTime = d.toLocaleTimeString();
-  
+
   const messageDiv = document.createElement("div");
   messageDiv.classList.add("bg-primaryColor", "m-4", "p-2", "rounded-lg", "max-w-72", "opacity-70");
   messageDiv.innerHTML = `<p>You have completed the task Optimize  Home page at ${currentTime}</p>`;
@@ -86,7 +86,7 @@ document.getElementById("completedBtn4").addEventListener('click', function () {
 
   const d = new Date();
   let currentTime = d.toLocaleTimeString();
-  
+
   const messageDiv = document.createElement("div");
   messageDiv.classList.add("bg-primaryColor", "m-4", "p-2", "rounded-lg", "max-w-72", "opacity-70");
   messageDiv.innerHTML = `<p>You have completed the task Add new emoji 🤲 at ${currentTime}</p>`;
@@ -110,7 +110,7 @@ document.getElementById("completedBtn5").addEventListener('click', function () {
 
   const d = new Date();
   let currentTime = d.toLocaleTimeString();
-  
+
   const messageDiv = document.createElement("div");
   messageDiv.classList.add("bg-primaryColor", "m-4", "p-2", "rounded-lg", "max-w-72", "opacity-70");
   messageDiv.innerHTML = `<p>You have completed the task Integrate OpenAI API at ${currentTime}</p>`;
@@ -134,7 +134,7 @@ document.getElementById("completedBtn6").addEventListener('click', function () {
 
   const d = new Date();
   let currentTime = d.toLocaleTimeString();
-  
+
   const messageDiv = document.createElement("div");
   messageDiv.classList.add("bg-primaryColor", "m-4", "p-2", "rounded-lg", "max-w-72", "opacity-70");
   messageDiv.innerHTML = `<p>You have completed the task Improve Job searching at ${currentTime}</p>`;
@@ -144,6 +144,14 @@ document.getElementById("completedBtn6").addEventListener('click', function () {
 
 
 
-document.getElementById("clear-btn").addEventListener('click',function(){
+document.getElementById("clear-btn").addEventListener('click', function () {
   document.getElementById('message-container').style.display = "none"
 })
+
+
+const today = new Date();
+const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
+const formattedDate = today.toLocaleDateString('en-US', options).replace(',', ''); 
+document.getElementById("cDate").innerText = formattedDate;
+
+
