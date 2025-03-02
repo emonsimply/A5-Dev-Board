@@ -21,13 +21,13 @@ document.getElementById("completedBtn").addEventListener('click', function () {
 
   document.getElementById("message-container").appendChild(messageDiv);
 
-  function taskAlert () {
+  function taskAlert() {
     const six = document.getElementById("taskSix").innerText;
     if (six == 0) {
       alert("congrats!!! You have completed all the current tasks")
     }
   }
-  taskAlert ()
+  taskAlert()
 })
 
 document.getElementById("completedBtn2").addEventListener('click', function () {
@@ -53,13 +53,13 @@ document.getElementById("completedBtn2").addEventListener('click', function () {
 
   document.getElementById("message-container").appendChild(messageDiv);
 
-  function taskAlert () {
+  function taskAlert() {
     const six = document.getElementById("taskSix").innerText;
     if (six == 0) {
       alert("congrats!!! You have completed all the current tasks")
     }
   }
-  taskAlert ()
+  taskAlert()
 })
 
 document.getElementById("completedBtn3").addEventListener('click', function () {
@@ -85,13 +85,13 @@ document.getElementById("completedBtn3").addEventListener('click', function () {
 
   document.getElementById("message-container").appendChild(messageDiv);
 
-  function taskAlert () {
+  function taskAlert() {
     const six = document.getElementById("taskSix").innerText;
     if (six == 0) {
       alert("congrats!!! You have completed all the current tasks")
     }
   }
-  taskAlert ()
+  taskAlert()
 })
 
 document.getElementById("completedBtn4").addEventListener('click', function () {
@@ -117,13 +117,13 @@ document.getElementById("completedBtn4").addEventListener('click', function () {
 
   document.getElementById("message-container").appendChild(messageDiv);
 
-  function taskAlert () {
+  function taskAlert() {
     const six = document.getElementById("taskSix").innerText;
     if (six == 0) {
       alert("congrats!!! You have completed all the current tasks")
     }
   }
-  taskAlert ()
+  taskAlert()
 })
 
 document.getElementById("completedBtn5").addEventListener('click', function () {
@@ -149,13 +149,13 @@ document.getElementById("completedBtn5").addEventListener('click', function () {
 
   document.getElementById("message-container").appendChild(messageDiv);
 
-  function taskAlert () {
+  function taskAlert() {
     const six = document.getElementById("taskSix").innerText;
     if (six == 0) {
       alert("congrats!!! You have completed all the current tasks")
     }
   }
-  taskAlert ()
+  taskAlert()
 })
 
 document.getElementById("completedBtn6").addEventListener('click', function () {
@@ -181,13 +181,13 @@ document.getElementById("completedBtn6").addEventListener('click', function () {
 
   document.getElementById("message-container").appendChild(messageDiv);
 
-  function taskAlert () {
+  function taskAlert() {
     const six = document.getElementById("taskSix").innerText;
     if (six == 0) {
       alert("congrats!!! You have completed all the current tasks")
     }
   }
-  taskAlert ()
+  taskAlert()
 })
 
 
@@ -202,4 +202,10 @@ const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numer
 const formattedDate = today.toLocaleDateString('en-US', options).replace(',', '');
 document.getElementById("cDate").innerText = formattedDate;
 
-
+const colors = ["BlueViolet", "LightCoral", "MediumSeaGreen", "Lavender", "Gold"];
+  let i = 0;
+document.getElementById("theme-img").addEventListener('click', function () {
+  
+  document.body.style.backgroundColor = colors[i];
+  i = (i + 1) % colors.length;
+})
