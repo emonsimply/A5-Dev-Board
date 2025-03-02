@@ -142,3 +142,8 @@ document.getElementById("completedBtn6").addEventListener('click', function () {
   document.getElementById("message-container").appendChild(messageDiv);
 })
 
+
+
+document.getElementById("clear-btn").addEventListener('click',function(){
+  document.getElementById('message-container').style.display = "none"
+})
