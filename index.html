@@ -43,7 +43,7 @@
       <div class="flex items-center gap-10">
         <div class="flex items-center bg-primaryColor p-3 rounded-full gap-3">
           <img src="assets/checkbox.png" alt="">
-          <p class="font-bold text-3xl">23</p>
+          <p id="taskSub" class="font-bold text-3xl">23</p>
         </div>
         <div class="bg-primaryColor p-3 rounded-full">
           <img src="assets/theme-btn.png" alt="">
@@ -61,14 +61,16 @@
           </div>
           <div>
             <p>Task Assigned</p>
-            <h2 class="font-bold text-2xl">6</h2>
+            <p id="taskSix" class="font-bold text-2xl">6</p>
           </div>
         </div>
 
         <div class="col-span-2 flex items-center bg-gradient-to-r from-bgColor indigo-500 to-[#9BA8F8] p-6 rounded-xl">
           <img class="w-14" src="assets/board.png" alt="">
-          
-          <a href="blogs.html"><p class="text-white">Discover Something New Today!</p></a>
+
+          <a href="blogs.html">
+            <p class="text-white">Discover Something New Today!</p>
+          </a>
         </div>
 
         <div class="flex items-center bg-primaryColor p-6 rounded-xl">
@@ -95,9 +97,11 @@
               <P class="opacity-70">Deadline</P>
               <h2>21 March 2025</h2>
             </div>
-            <button class="text-white bg-bgColor rounded-lg py-2 px-4 hover:bg-blue-700">Completed</button>
+            <button id="completedBtn"
+              class="text-white bg-bgColor rounded-lg py-2 px-4 hover:bg-blue-700">Completed</button>
           </div>
         </div>
+        
 
       </div>
     </section>
@@ -109,18 +113,19 @@
           <img src="assets/activity.png" alt="">
           <h1 class="text-xl">Activity Log</h1>
         </div>
-        <button class="text-white bg-bgColor rounded-lg py-2 px-4 hover:bg-blue-700">Clear History</button>
+        <button id="clear-btn" class="text-white bg-bgColor rounded-lg py-2 px-4 hover:bg-blue-700">Clear History</button>
       </div>
 
       <hr class="border-t-2 border-dashed">
       <!--  message -->
-      <div class="bg-primaryColor m-4 p-2 rounded-lg max-w-72 opacity-70 ">
-        <p>You have Complete The Task <span>Add Dark Mode at 12:48:15 PM</span></p>
+      <div id="message-container">
+        
       </div>
     </section>
   </main>
 
-  <script src=""></script>
+  <script src="script/main.js"></script>
+  <script src="script/function.js"></script>
 </body>
 
 </html>
