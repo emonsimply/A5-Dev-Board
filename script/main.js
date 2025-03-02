@@ -20,6 +20,14 @@ document.getElementById("completedBtn").addEventListener('click', function () {
   messageDiv.innerHTML = `<p>You have completed the task Fix Mobile Button Issue at ${currentTime}</p>`;
 
   document.getElementById("message-container").appendChild(messageDiv);
+
+  function taskAlert () {
+    const six = document.getElementById("taskSix").innerText;
+    if (six == 0) {
+      alert("congrats!!! You have completed all the current tasks")
+    }
+  }
+  taskAlert ()
 })
 
 document.getElementById("completedBtn2").addEventListener('click', function () {
@@ -44,6 +52,14 @@ document.getElementById("completedBtn2").addEventListener('click', function () {
   messageDiv.innerHTML = `<p>You have completed the task Add Dark Mode at ${currentTime}</p>`;
 
   document.getElementById("message-container").appendChild(messageDiv);
+
+  function taskAlert () {
+    const six = document.getElementById("taskSix").innerText;
+    if (six == 0) {
+      alert("congrats!!! You have completed all the current tasks")
+    }
+  }
+  taskAlert ()
 })
 
 document.getElementById("completedBtn3").addEventListener('click', function () {
@@ -68,6 +84,14 @@ document.getElementById("completedBtn3").addEventListener('click', function () {
   messageDiv.innerHTML = `<p>You have completed the task Optimize  Home page at ${currentTime}</p>`;
 
   document.getElementById("message-container").appendChild(messageDiv);
+
+  function taskAlert () {
+    const six = document.getElementById("taskSix").innerText;
+    if (six == 0) {
+      alert("congrats!!! You have completed all the current tasks")
+    }
+  }
+  taskAlert ()
 })
 
 document.getElementById("completedBtn4").addEventListener('click', function () {
@@ -92,6 +116,14 @@ document.getElementById("completedBtn4").addEventListener('click', function () {
   messageDiv.innerHTML = `<p>You have completed the task Add new emoji 🤲 at ${currentTime}</p>`;
 
   document.getElementById("message-container").appendChild(messageDiv);
+
+  function taskAlert () {
+    const six = document.getElementById("taskSix").innerText;
+    if (six == 0) {
+      alert("congrats!!! You have completed all the current tasks")
+    }
+  }
+  taskAlert ()
 })
 
 document.getElementById("completedBtn5").addEventListener('click', function () {
@@ -116,6 +148,14 @@ document.getElementById("completedBtn5").addEventListener('click', function () {
   messageDiv.innerHTML = `<p>You have completed the task Integrate OpenAI API at ${currentTime}</p>`;
 
   document.getElementById("message-container").appendChild(messageDiv);
+
+  function taskAlert () {
+    const six = document.getElementById("taskSix").innerText;
+    if (six == 0) {
+      alert("congrats!!! You have completed all the current tasks")
+    }
+  }
+  taskAlert ()
 })
 
 document.getElementById("completedBtn6").addEventListener('click', function () {
@@ -140,6 +180,14 @@ document.getElementById("completedBtn6").addEventListener('click', function () {
   messageDiv.innerHTML = `<p>You have completed the task Improve Job searching at ${currentTime}</p>`;
 
   document.getElementById("message-container").appendChild(messageDiv);
+
+  function taskAlert () {
+    const six = document.getElementById("taskSix").innerText;
+    if (six == 0) {
+      alert("congrats!!! You have completed all the current tasks")
+    }
+  }
+  taskAlert ()
 })
 
 
@@ -151,7 +199,7 @@ document.getElementById("clear-btn").addEventListener('click', function () {
 
 const today = new Date();
 const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
-const formattedDate = today.toLocaleDateString('en-US', options).replace(',', ''); 
+const formattedDate = today.toLocaleDateString('en-US', options).replace(',', '');
 document.getElementById("cDate").innerText = formattedDate;
 
 
